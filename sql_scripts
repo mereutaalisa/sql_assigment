@@ -1,0 +1,14 @@
+1.select Address 
+  from customers;
+
+2.SELECT MIN(Country)
+  FROM customers;
+
+3.SELECT * FROM customers
+ORDER BY Country;
+
+4.SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5
+ORDER BY COUNT(CustomerID) DESC;
